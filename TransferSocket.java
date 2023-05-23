@@ -71,10 +71,10 @@ public class TransferSocket {
         	
         }, e -> {
         	if (e instanceof ArrayIndexOutOfBoundsException) {
-				// TODO catch 
+//        	 TODO catch 
                 e.printStackTrace();
             } else if (e instanceof NumberFormatException ) {
-				// TODO catch 
+//        	 TODO catch 
                 e.printStackTrace();
             } else {
                 e.printStackTrace();
