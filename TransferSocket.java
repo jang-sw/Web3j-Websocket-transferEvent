@@ -84,7 +84,7 @@ public class TransferSocket {
 				String to = eventLog.getTopics().get(2);
 				String tokenId = eventLog.getTopics().get(3);
 				LocalDateTime now = LocalDateTime.now();
-            			System.out.println("New Owner :: 0x" + Keys.toChecksumAddress(to).substring(26) + "  &  TokenId :: " + Long.decode(tokenId) + " :: " + now);          
+            			System.out.println(String.format("[ %s ] [TRANSFER OCCUR] - New Owner :: 0x%s  &  TokenId :: %s " ,now.toString(), Keys.toChecksumAddress(to).substring(26), Long.decode(tokenId) ));          
             		}, e -> {
 //				TODO
 				if (e instanceof ArrayIndexOutOfBoundsException) {
